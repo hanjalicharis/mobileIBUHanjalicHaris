@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "413677573598",
+    "firebase_url": "https://projectmanhattancn.firebaseio.com",
+    "project_id": "projectmanhattancn",
+    "storage_bucket": "projectmanhattancn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:413677573598:android:ae6c198de369c74cc3b94f",
+        "android_client_info": {
+          "package_name": "com.example.projectmanhattan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "413677573598-c91uoggr4bdfip63m1qiookc4dbslaou.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBw5HjTmp4s2uUHypcn_jJ1Hs8T-_ouaYU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "413677573598-c91uoggr4bdfip63m1qiookc4dbslaou.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
