@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity">
+
+    <include
+        android:id="@+id/post_page_toolbar"
+        layout="@layout/app_bar_layout"></include>
+
+    <ImageButton
+        android:id="@+id/select_image"
+        android:layout_width="match_parent"
+        android:layout_height="368dp"
+        android:layout_marginTop="120dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/select_image" />
+
+    <EditText
+        android:id="@+id/post_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="145dp"
+        android:background="@drawable/inputs"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="What do you want to share?"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/new_post_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="28dp"
+        android:background="@drawable/button"
+        android:text="Create new post"
+        android:textSize="16sp" />
+
+
+</RelativeLayout>

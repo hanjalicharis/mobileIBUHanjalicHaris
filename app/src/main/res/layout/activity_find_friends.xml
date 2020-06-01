@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorProfile"
+    tools:context=".FindFriendsActivity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/find_friends_app_bar_layout"
+        />
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/find_friends_app_bar_layout"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/textID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="Search for people"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/cardview_light_background"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/search_box"
+            android:layout_width="280dp"
+            android:layout_height="70dp"
+            android:layout_below="@id/textID"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:padding="10dp"
+            android:hint="Enter username or full name"
+            android:textColor="@color/cardview_light_background"
+            android:textColorHint="@color/cardview_light_background"
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@id/search_button"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/textID"
+            android:layout_toEndOf="@id/search_box"
+            android:text="SEARCH"
+            android:textSize="12sp"
+
+            />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/search_result_list_of_people"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/layout"
+        android:layout_margin="7dp"/>
+
+</RelativeLayout>

@@ -13,9 +13,7 @@
 
         <include
             android:id="@+id/main_page_toolbar"
-            layout="@layout/app_bar_layout"
-            >
-        </include>
+            layout="@layout/app_bar_layout"></include>
 
         <FrameLayout
             android:id="@+id/main_container"
@@ -31,6 +29,24 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
         </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/add_new_post_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@color/colorPrimaryDark"
+            android:baselineAlignBottom="false"
+
+
+            android:focusableInTouchMode="false"
+            android:scaleType="centerCrop"
+            android:src="@drawable/add_post_high" />
+
     </RelativeLayout>
 
     <com.google.android.material.navigation.NavigationView
